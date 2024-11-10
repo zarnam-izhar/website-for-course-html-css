@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="main">
+        
+        <!-- Desktop Navbar -->
+        <div class="navbar-desktop">
+            <div class="icon">
+                <h2 class="logo">Zarnam</h2>
+            </div>
+            <div class="menu-desktop">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" placeholder="Type to search">
+                <button class="btn">Search</button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navbar -->
+        <div class="navbar-mobile">
+         
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span id="hamburger-icon">☰</span>
+            </div>
+            <div class="menu-mobile" id="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <h1>Web Design and <br><span>Development</span> <br>Course</h1>
+            <p class="par">We offer short courses on web design, graphic design, and<br>
+            web development using Next.js, Python, etc.<br>Apply now to enjoy the benefits that come your way!</p>
+            <button class="cn"><a href="#">Apply now</a></button>
+            <div class="form">
+                <h2>Login here</h2>
+                <input type="email" name="email" placeholder="Enter email here">
+                <input type="password" name="password" placeholder="Enter password">
+                <button class="btnn"><a href="#">Login</a></button>
+                <p class="link">Don't have an account?<br><a href="#">Sign up</a> here</p>
+                <p class="liw">Log in with</p>
+                <div class="icon">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+       function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("show");
+}
+    </script>
+</body>
+</html>
